@@ -1,0 +1,16 @@
+#!/bin/sh
+# Initialize LanguageTool directories and configuration
+
+mkdir -p /config
+
+if [ ! -f /config/server.properties ]; then
+    echo "[init] Creating default /config/server.properties..."
+    cat <<'EOF' > /config/server.properties
+# LanguageTool HTTP server configuration
+# Full documentation: https://dev.languagetool.org/http-server
+maxTextLength=50000
+maxCheckTimeMillis=60000
+EOF
+fi
+
+chown -R bsd:bsd /config

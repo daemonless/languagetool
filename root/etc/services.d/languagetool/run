@@ -1,0 +1,30 @@
+#!/bin/sh
+# LanguageTool s6 service
+
+export HOME=/config
+
+# Signal readiness once the healthcheck passes (FD 3, see notification-fd)
+s6-ready-when /healthz
+
+PORT="${LANGUAGETOOL_PORT:-8010}"
+JAVA_OPTS="${JAVA_OPTS:--Xmx512m}"
+CONFIG_FILE="${LANGUAGETOOL_CONFIG:-/config/server.properties}"
+
+CONFIG_ARGS=""
+if [ -f "$CONFIG_FILE" ]; then
+    CONFIG_ARGS="--config $CONFIG_FILE"
+fi
+
+echo "[INFO] Starting LanguageTool server on 0.0.0.0:${PORT}..."
+
+cd /config
+exec /usr/local/bin/s6-setuidgid bsd \
+    /usr/local/bin/java \
+    -XX:+ExitOnOutOfMemoryError \
+    ${JAVA_OPTS} \
+    -cp /usr/local/share/java/languagetool/languagetool-server.jar \
+    org.languagetool.server.HTTPServer \
+    --port "${PORT}" \
+    --public \
+    --allow-origin '*' \
+    ${CONFIG_ARGS}

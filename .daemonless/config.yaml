@@ -1,0 +1,27 @@
+# dbuild configuration file
+# Place in .daemonless/config.yaml or .dbuild.yaml (higher priority)
+#
+# Full reference: https://github.com/daemonless/dbuild
+
+build:
+  architectures:
+    - amd64
+    - aarch64
+  variants:
+    - tag: pkg
+      tag_desc: "**FreeBSD Quarterly**. Uses stable, tested packages."
+      containerfile: Containerfile
+      args:
+        BASE_VERSION: "15.1"
+    - tag: pkg-latest
+      aliases: ["latest"]
+      containerfile: Containerfile
+      default: true
+      args:
+        BASE_VERSION: "15.1-latest"
+
+cit:
+  mode: health
+  port: 8010
+  health: /v2/healthcheck
+  ready: "Server started"

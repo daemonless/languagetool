@@ -1,0 +1,43 @@
+name: languagetool
+
+x-daemonless:
+  title: "LanguageTool"
+  icon: ":material-spellcheck:"
+  category: "Utilities"
+  description: "LanguageTool is an open-source proofreading tool for English, French, German, Spanish, Portuguese, Dutch, and many other languages. It detects grammar, style, and spelling errors that a simple spell checker cannot find, such as subject-verb agreement problems, incorrect articles, and commonly confused words."
+  upstream_url: "https://github.com/languagetool-org/languagetool"
+  web_url: "https://languagetool.org"
+  freshports_url: "https://www.freshports.org/textproc/languagetool/"
+  user: "bsd"
+  mlock: false
+  community: "Discord:https://discord.gg/Kb9tkhecZT"
+
+  docs:
+    env:
+      PUID: "User ID for the application process"
+      PGID: "Group ID for the application process"
+      TZ: "Timezone for the container"
+      JAVA_OPTS: "JVM memory and runtime options (default: -Xmx512m)"
+      LANGUAGETOOL_PORT: "Port to bind HTTP server to (default: 8010)"
+    volumes:
+      /config: "Configuration and data directory (server.properties, dictionaries, ngrams)"
+    ports:
+      8010: "HTTP API"
+
+services:
+  languagetool:
+    image: ghcr.io/daemonless/languagetool:latest
+    container_name: languagetool
+    restart: always
+
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=UTC
+      - JAVA_OPTS=-Xmx512m
+
+    volumes:
+      - /path/to/containers/languagetool:/config
+
+    ports:
+      - 8010:8010

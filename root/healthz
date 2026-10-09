@@ -1,0 +1,5 @@
+#!/bin/sh
+# Daemonless standard healthcheck for languagetool
+
+PORT="${LANGUAGETOOL_PORT:-8010}"
+fetch -qo /dev/null "http://127.0.0.1:${PORT}/v2/healthcheck" >/dev/null 2>&1
