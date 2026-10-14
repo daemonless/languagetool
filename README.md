@@ -41,7 +41,7 @@ services:
       - PGID=1000  # Group ID for the application process
       - TZ=UTC  # Timezone for the container
       - JAVA_OPTS=-Xmx512m  # JVM memory and runtime options (default: -Xmx512m)
-      - LANGUAGETOOL_PORT=  # Port to bind HTTP server to (default: 8010)
+      # - LANGUAGETOOL_PORT=  # Port to bind HTTP server to (default: 8010)
     volumes:
       - "/containers/languagetool:/config"
     ports:
@@ -63,7 +63,6 @@ PUID=1000
 PGID=1000
 TZ=UTC
 JAVA_OPTS=-Xmx512m
-LANGUAGETOOL_PORT=
 ```
 
 **appjail-director.yml**:
@@ -87,7 +86,6 @@ services:
         - PGID: !ENV '${PGID}'
         - TZ: !ENV '${TZ}'
         - JAVA_OPTS: !ENV '${JAVA_OPTS}'
-        - LANGUAGETOOL_PORT: !ENV '${LANGUAGETOOL_PORT}'
     volumes:
       - languagetool: /config
 volumes:
@@ -132,7 +130,6 @@ services:
       - PGID=1000
       - TZ=UTC
       - JAVA_OPTS=-Xmx512m
-      - LANGUAGETOOL_PORT=
     volumes:
       - "/containers/languagetool:/config"
 ```
