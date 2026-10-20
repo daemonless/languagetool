@@ -1,11 +1,11 @@
 {
-  "generated": "2026-10-14T19:57:06Z",
+  "generated": "2026-10-20T01:22:02Z",
   "image": "languagetool",
   "tags": {
     "pkg-aarch64": {
       "app_version": "20260925,1",
       "arch": "aarch64",
-      "generated": "2026-10-14T19:55:30Z",
+      "generated": "2026-10-20T01:20:25Z",
       "packages": {
         "dotnet": [],
         "freebsd": [
@@ -266,7 +266,7 @@
               "MPL20"
             ],
             "name": "ca_root_nss",
-            "version": "3.130"
+            "version": "3.131"
           },
           {
             "licenses": [
@@ -1533,9 +1533,9 @@
       }
     },
     "pkg-latest-aarch64": {
-      "app_version": "20260925,1",
+      "app_version": "20261010,1",
       "arch": "aarch64",
-      "generated": "2026-10-14T19:55:35Z",
+      "generated": "2026-10-20T01:20:29Z",
       "packages": {
         "dotnet": [],
         "freebsd": [
@@ -1945,7 +1945,7 @@
               "LGPL21+"
             ],
             "name": "languagetool",
-            "version": "20260925,1"
+            "version": "20261010,1"
           },
           {
             "licenses": [
@@ -2150,7 +2150,7 @@
               "PSFL"
             ],
             "name": "python312",
-            "version": "3.12.14_1"
+            "version": "3.12.15"
           },
           {
             "licenses": [
