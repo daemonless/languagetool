@@ -1,11 +1,11 @@
 {
-  "generated": "2026-10-14T18:17:51Z",
+  "generated": "2026-10-20T00:04:15Z",
   "image": "languagetool",
   "tags": {
     "pkg-amd64": {
       "app_version": "20260925,1",
       "arch": "amd64",
-      "generated": "2026-10-14T18:00:19Z",
+      "generated": "2026-10-19T23:57:14Z",
       "packages": {
         "dotnet": [],
         "freebsd": [
@@ -620,7 +620,7 @@
               "PSFL"
             ],
             "name": "python312",
-            "version": "3.12.14_1"
+            "version": "3.12.15"
           },
           {
             "licenses": [
@@ -1535,7 +1535,7 @@
     "pkg-latest-amd64": {
       "app_version": "20261010,1",
       "arch": "amd64",
-      "generated": "2026-10-14T18:01:06Z",
+      "generated": "2026-10-20T00:02:46Z",
       "packages": {
         "dotnet": [],
         "freebsd": [
@@ -1900,7 +1900,7 @@
               "MIT"
             ],
             "name": "harfbuzz",
-            "version": "14.2.1"
+            "version": "14.5.1"
           },
           {
             "licenses": [
@@ -2150,7 +2150,7 @@
               "PSFL"
             ],
             "name": "python312",
-            "version": "3.12.14_1"
+            "version": "3.12.15"
           },
           {
             "licenses": [
