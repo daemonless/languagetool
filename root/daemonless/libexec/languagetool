@@ -1,10 +1,7 @@
 #!/bin/sh
-# LanguageTool s6 service
+# Start languagetool; /init has already dropped to the run user.
 
 export HOME=/config
-
-# Signal readiness once the healthcheck passes (FD 3, see notification-fd)
-s6-ready-when /healthz
 
 PORT="${LANGUAGETOOL_PORT:-8010}"
 JAVA_OPTS="${JAVA_OPTS:--Xmx512m}"
@@ -18,7 +15,7 @@ fi
 echo "[INFO] Starting LanguageTool server on 0.0.0.0:${PORT}..."
 
 cd /config
-exec /usr/local/bin/s6-setuidgid bsd \
+exec \
     /usr/local/bin/java \
     -XX:+ExitOnOutOfMemoryError \
     ${JAVA_OPTS} \

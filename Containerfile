@@ -5,7 +5,7 @@
 # --------------------------------------------------------------------------
 
 ARG BASE_VERSION=15.1
-FROM ghcr.io/daemonless/base:${BASE_VERSION}
+FROM ghcr.io/daemonless/base-exec:${BASE_VERSION}
 
 ARG FREEBSD_ARCH=amd64
 ARG PKG_NAME="languagetool"
@@ -35,9 +35,12 @@ RUN pkg update && \
 
 # Copy root filesystem
 COPY root/ /
+RUN chmod +x /daemonless/libexec/languagetool /daemonless/init.d/*
+
+CMD ["/daemonless/libexec/languagetool"]
 
 # Set permissions
-RUN chmod +x /etc/services.d/languagetool/run /healthz
+RUN chmod +x /healthz
 
 # Expose
 EXPOSE 8010
