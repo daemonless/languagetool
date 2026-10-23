@@ -1,11 +1,11 @@
 {
-  "generated": "2026-10-20T01:22:02Z",
+  "generated": "2026-10-23T09:37:36Z",
   "image": "languagetool",
   "tags": {
     "pkg-aarch64": {
       "app_version": "20260925,1",
       "arch": "aarch64",
-      "generated": "2026-10-20T01:20:25Z",
+      "generated": "2026-10-23T09:35:53Z",
       "packages": {
         "dotnet": [],
         "freebsd": [
@@ -189,7 +189,7 @@
               "BSD2CLAUSE"
             ],
             "name": "FreeBSD-runtime",
-            "version": "15.1p4"
+            "version": "15.1p5"
           },
           {
             "licenses": [
@@ -238,7 +238,7 @@
               "PD"
             ],
             "name": "FreeBSD-zoneinfo",
-            "version": "15.1p4"
+            "version": "15.1p5"
           },
           {
             "licenses": [
@@ -283,13 +283,6 @@
             ],
             "name": "encodings",
             "version": "1.1.0,1"
-          },
-          {
-            "licenses": [
-              "ISCL"
-            ],
-            "name": "execline",
-            "version": "2.9.8.1"
           },
           {
             "licenses": [
@@ -620,7 +613,7 @@
               "PSFL"
             ],
             "name": "python312",
-            "version": "3.12.14_1"
+            "version": "3.12.15"
           },
           {
             "licenses": [
@@ -628,20 +621,6 @@
             ],
             "name": "readline",
             "version": "8.3.6"
-          },
-          {
-            "licenses": [
-              "ISCL"
-            ],
-            "name": "s6",
-            "version": "2.14.0.1"
-          },
-          {
-            "licenses": [
-              "ISCL"
-            ],
-            "name": "skalibs",
-            "version": "2.14.5.1"
           },
           {
             "licenses": [
@@ -1521,7 +1500,7 @@
       "source": "upstream",
       "summary": {
         "dotnet": 0,
-        "freebsd": 93,
+        "freebsd": 90,
         "go": 0,
         "java": 165,
         "node": 0,
@@ -1529,13 +1508,13 @@
         "python": 2,
         "ruby": 0,
         "rust": 0,
-        "total": 260
+        "total": 257
       }
     },
     "pkg-latest-aarch64": {
       "app_version": "20261010,1",
       "arch": "aarch64",
-      "generated": "2026-10-20T01:20:29Z",
+      "generated": "2026-10-23T09:35:59Z",
       "packages": {
         "dotnet": [],
         "freebsd": [
@@ -1719,7 +1698,7 @@
               "BSD2CLAUSE"
             ],
             "name": "FreeBSD-runtime",
-            "version": "15.1p4"
+            "version": "15.1p5"
           },
           {
             "licenses": [
@@ -1768,7 +1747,7 @@
               "PD"
             ],
             "name": "FreeBSD-zoneinfo",
-            "version": "15.1p4"
+            "version": "15.1p5"
           },
           {
             "licenses": [
@@ -1813,13 +1792,6 @@
             ],
             "name": "encodings",
             "version": "1.1.0,1"
-          },
-          {
-            "licenses": [
-              "ISCL"
-            ],
-            "name": "execline",
-            "version": "2.9.8.1"
           },
           {
             "licenses": [
@@ -1900,7 +1872,7 @@
               "MIT"
             ],
             "name": "harfbuzz",
-            "version": "14.2.1"
+            "version": "14.6.0"
           },
           {
             "licenses": [
@@ -1980,7 +1952,7 @@
               "MIT"
             ],
             "name": "libX11",
-            "version": "1.8.13_1,1"
+            "version": "1.8.14,1"
           },
           {
             "licenses": [
@@ -2015,7 +1987,7 @@
               "MIT"
             ],
             "name": "libXi",
-            "version": "1.8.3,1"
+            "version": "1.8.4,1"
           },
           {
             "licenses": [
@@ -2029,7 +2001,7 @@
               "MIT"
             ],
             "name": "libXrender",
-            "version": "0.9.12"
+            "version": "0.9.13"
           },
           {
             "licenses": [
@@ -2043,7 +2015,7 @@
               "MIT"
             ],
             "name": "libXtst",
-            "version": "1.2.5"
+            "version": "1.2.6"
           },
           {
             "licenses": [
@@ -2158,20 +2130,6 @@
             ],
             "name": "readline",
             "version": "8.3.6"
-          },
-          {
-            "licenses": [
-              "ISCL"
-            ],
-            "name": "s6",
-            "version": "2.14.0.1"
-          },
-          {
-            "licenses": [
-              "ISCL"
-            ],
-            "name": "skalibs",
-            "version": "2.14.5.1"
           },
           {
             "licenses": [
@@ -3051,7 +3009,7 @@
       "source": "upstream",
       "summary": {
         "dotnet": 0,
-        "freebsd": 93,
+        "freebsd": 90,
         "go": 0,
         "java": 165,
         "node": 0,
@@ -3059,7 +3017,7 @@
         "python": 2,
         "ruby": 0,
         "rust": 0,
-        "total": 260
+        "total": 257
       }
     }
   }
