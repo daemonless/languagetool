@@ -1,11 +1,11 @@
 {
-  "generated": "2026-10-23T09:37:36Z",
+  "generated": "2026-11-03T12:34:55Z",
   "image": "languagetool",
   "tags": {
     "pkg-aarch64": {
       "app_version": "20260925,1",
       "arch": "aarch64",
-      "generated": "2026-10-23T09:35:53Z",
+      "generated": "2026-11-03T12:32:46Z",
       "packages": {
         "dotnet": [],
         "freebsd": [
@@ -189,7 +189,7 @@
               "BSD2CLAUSE"
             ],
             "name": "FreeBSD-runtime",
-            "version": "15.1p5"
+            "version": "15.1p6"
           },
           {
             "licenses": [
@@ -259,14 +259,14 @@
               "MIT"
             ],
             "name": "brotli",
-            "version": "1.2.0,1"
+            "version": "1.2.1,1"
           },
           {
             "licenses": [
               "MPL20"
             ],
             "name": "ca_root_nss",
-            "version": "3.131"
+            "version": "3.132"
           },
           {
             "licenses": [
@@ -443,7 +443,7 @@
               "MIT"
             ],
             "name": "libX11",
-            "version": "1.8.13_1,1"
+            "version": "1.8.14,1"
           },
           {
             "licenses": [
@@ -478,7 +478,7 @@
               "MIT"
             ],
             "name": "libXi",
-            "version": "1.8.3,1"
+            "version": "1.8.4,1"
           },
           {
             "licenses": [
@@ -492,7 +492,7 @@
               "MIT"
             ],
             "name": "libXrender",
-            "version": "0.9.12"
+            "version": "0.9.13"
           },
           {
             "licenses": [
@@ -506,7 +506,7 @@
               "MIT"
             ],
             "name": "libXtst",
-            "version": "1.2.5"
+            "version": "1.2.6"
           },
           {
             "licenses": [
@@ -577,7 +577,7 @@
               "GPLv2"
             ],
             "name": "openjdk25",
-            "version": "25.0.4+7.f.1_1"
+            "version": "25.0.5.0.3+1.f.1"
           },
           {
             "licenses": [
@@ -1514,7 +1514,7 @@
     "pkg-latest-aarch64": {
       "app_version": "20261010,1",
       "arch": "aarch64",
-      "generated": "2026-10-23T09:35:59Z",
+      "generated": "2026-11-03T12:32:52Z",
       "packages": {
         "dotnet": [],
         "freebsd": [
@@ -1698,7 +1698,7 @@
               "BSD2CLAUSE"
             ],
             "name": "FreeBSD-runtime",
-            "version": "15.1p5"
+            "version": "15.1p6"
           },
           {
             "licenses": [
@@ -1768,14 +1768,14 @@
               "MIT"
             ],
             "name": "brotli",
-            "version": "1.2.0,1"
+            "version": "1.2.1,1"
           },
           {
             "licenses": [
               "MPL20"
             ],
             "name": "ca_root_nss",
-            "version": "3.131"
+            "version": "3.132"
           },
           {
             "licenses": [
@@ -2086,7 +2086,7 @@
               "GPLv2"
             ],
             "name": "openjdk25",
-            "version": "25.0.4+7.f.1_1"
+            "version": "25.0.5.0.3+1.f.1"
           },
           {
             "licenses": [
