@@ -1,11 +1,11 @@
 {
-  "generated": "2026-11-04T12:54:41Z",
+  "generated": "2026-11-04T17:56:08Z",
   "image": "languagetool",
   "tags": {
     "pkg-amd64": {
       "app_version": "20260925,1",
       "arch": "amd64",
-      "generated": "2026-11-04T12:52:40Z",
+      "generated": "2026-11-04T17:53:53Z",
       "packages": {
         "dotnet": [],
         "freebsd": [
@@ -1514,7 +1514,7 @@
     "pkg-latest-amd64": {
       "app_version": "20261010,1",
       "arch": "amd64",
-      "generated": "2026-11-04T12:53:18Z",
+      "generated": "2026-11-04T17:54:48Z",
       "packages": {
         "dotnet": [],
         "freebsd": [
