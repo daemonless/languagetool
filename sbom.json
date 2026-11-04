@@ -1,11 +1,11 @@
 {
-  "generated": "2026-11-03T12:03:14Z",
+  "generated": "2026-11-04T12:54:41Z",
   "image": "languagetool",
   "tags": {
     "pkg-amd64": {
       "app_version": "20260925,1",
       "arch": "amd64",
-      "generated": "2026-11-03T12:02:18Z",
+      "generated": "2026-11-04T12:52:40Z",
       "packages": {
         "dotnet": [],
         "freebsd": [
@@ -1514,7 +1514,7 @@
     "pkg-latest-amd64": {
       "app_version": "20261010,1",
       "arch": "amd64",
-      "generated": "2026-11-03T11:59:34Z",
+      "generated": "2026-11-04T12:53:18Z",
       "packages": {
         "dotnet": [],
         "freebsd": [
@@ -2086,7 +2086,7 @@
               "GPLv2"
             ],
             "name": "openjdk25",
-            "version": "25.0.5.0.3+1.f.1"
+            "version": "25.0.5.0.3+1.f.1_1"
           },
           {
             "licenses": [
